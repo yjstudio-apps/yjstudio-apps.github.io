@@ -3,40 +3,283 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>YJ Studio</title>
-  <meta name="description" content="YJ Studio 앱 안내와 개인정보처리방침">
-  <link rel="stylesheet" href="assets/style.css">
+  <title>YJ Studio — 모바일 앱 개발 · 협업</title>
+  <meta name="description" content="생활 속 번거로움을 작은 앱으로. YJ Studio는 기획부터 Flutter 개발, 스토어 출시 준비까지 직접 만드는 모바일 앱 스튜디오입니다. 외주 개발·MVP·기존 앱 개선 협업 문의를 받습니다.">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="YJ Studio — 모바일 앱 개발 · 협업">
+  <meta property="og:description" content="기획부터 Flutter 개발, 스토어 출시 준비까지. 외주 개발·MVP·기존 앱 개선 협업 문의를 받습니다.">
+  <meta property="og:url" content="https://yjstudio-apps.github.io/">
+  <meta property="og:image" content="https://yjstudio-apps.github.io/assets/apps/homerecord.png">
+  <meta name="theme-color" content="#0e8a9c">
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Cdefs%3E%3ClinearGradient id='g' x1='0' y1='0' x2='1' y2='1'%3E%3Cstop offset='0' stop-color='%230e8a9c'/%3E%3Cstop offset='1' stop-color='%232563eb'/%3E%3C/linearGradient%3E%3C/defs%3E%3Crect width='64' height='64' rx='18' fill='url(%23g)'/%3E%3Ctext x='32' y='42' font-family='Arial,sans-serif' font-size='26' font-weight='800' fill='white' text-anchor='middle'%3EYJ%3C/text%3E%3C/svg%3E">
+  <link rel="preconnect" href="https://cdn.jsdelivr.net" crossorigin>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/variable/pretendardvariable-dynamic-subset.min.css">
+  <link rel="stylesheet" href="assets/site.css">
 </head>
 <body>
-  <main>
-    <header class="page">
-      <span class="eyebrow">YJ Studio</span>
-      <h1>앱 안내 · 개인정보처리방침</h1>
-      <p class="meta">문의: <a href="mailto:yjstudio.apps@gmail.com">yjstudio.apps@gmail.com</a></p>
+  <nav class="nav" aria-label="주 메뉴">
+    <div class="wrap">
+      <a class="brand" href="#top"><span class="brand-mark" aria-hidden="true">YJ</span>YJ Studio</a>
+      <div class="nav-links">
+        <a href="#apps">만든 앱</a>
+        <a href="#skills">할 수 있는 일</a>
+        <a href="#work">협업</a>
+        <a href="#contact">문의</a>
+      </div>
+      <a class="btn btn-primary btn-sm nav-cta" href="#contact">문의하기</a>
+    </div>
+  </nav>
+
+  <main id="top">
+    <!-- 첫 화면 -->
+    <header class="hero">
+      <div class="wrap">
+        <div>
+          <span class="pill"><span class="dot" aria-hidden="true"></span>협업 문의 받는 중</span>
+          <h1>생활 속 번거로움을<br><em>작은 앱</em>으로 풀어냅니다</h1>
+          <p class="lead">YJ Studio는 아이디어 정리부터 Flutter 개발, 스토어 출시 준비까지 직접 만드는 모바일 앱 스튜디오입니다. 로그인이나 서버 없이도 기기 안에서 가볍고 안전하게 동작하는 앱을 주로 만듭니다.</p>
+          <div class="hero-actions">
+            <a class="btn btn-primary" href="#contact">협업 문의하기</a>
+            <a class="btn btn-ghost" href="#apps">만든 앱 보기</a>
+          </div>
+        </div>
+        <div class="icon-cloud" aria-label="YJ Studio가 만든 앱 아이콘">
+          <img src="assets/apps/homerecord.png" alt="집기록 아이콘" width="192" height="192">
+          <img src="assets/apps/ildangtok.png" alt="일당톡 아이콘" width="192" height="192">
+          <img src="assets/apps/evidencenote.png" alt="증거노트 아이콘" width="192" height="192">
+          <img src="assets/apps/snapreminder.png" alt="찍어알림 아이콘" width="192" height="192">
+          <img src="assets/apps/familydeadline.png" alt="우리집 알림장 아이콘" width="192" height="192">
+          <img src="assets/apps/travelmate.png" alt="TravelMate 아이콘" width="192" height="192">
+        </div>
+      </div>
     </header>
 
-    <ul class="apps">
-      <li>
-        <a href="privacy/homerecord/">
-          <strong>집기록 - 보증금 지키는 우리집 증거함</strong>
-          <span>개인정보처리방침</span>
-        </a>
-      </li>
-      <li>
-        <a href="privacy/evidencenote/">
-          <strong>증거노트 - 사건 기록 정리</strong>
-          <span>개인정보처리방침 · <span lang="en">Privacy Policy</span></span>
-        </a>
-      </li>
-      <li>
-        <a href="privacy/woorijip/">
-          <strong>우리집 알림장 - 가족 일정·할 일 챙기기</strong>
-          <span>개인정보처리방침 · 계정 삭제 안내</span>
-        </a>
-      </li>
-    </ul>
+    <!-- 만든 앱 -->
+    <section class="section" id="apps" aria-labelledby="apps-title">
+      <div class="wrap">
+        <p class="kicker">WORK</p>
+        <h2 id="apps-title">직접 만든 앱</h2>
+        <p class="sub">기획 문서부터 화면, 데이터, 스토어 등록 자료까지 직접 만든 앱들입니다.</p>
 
-    <footer>© 2026 YJ Studio</footer>
+        <article class="feature">
+          <div>
+            <div class="feature-head">
+              <img src="assets/apps/homerecord.png" alt="" width="56" height="56">
+              <div>
+                <h3>집기록</h3>
+                <p class="tagline">보증금 지키는 우리집 증거함</p>
+              </div>
+            </div>
+            <span class="status ready">비공개 테스트 준비 중</span>
+            <p style="margin-top:12px">세입자가 입주할 때 집 상태를 사진으로 남기고, 퇴거할 때 같은 구도로 다시 찍어 비교하는 앱입니다.</p>
+            <ul class="checks">
+              <li>입주 사진을 반투명하게 띄워 같은 구도로 다시 찍기</li>
+              <li>찍은 뒤 '정상 / 문제있음'만 고르는 빠른 기록</li>
+              <li>문제 발견 → 집주인 알림 → 수리까지 이어지는 사건 타임라인</li>
+              <li>원본 사진 그대로 담는 증거 PDF, 기기 안에서 읽는 계량기 숫자</li>
+            </ul>
+            <div class="tags"><span>Flutter</span><span>Riverpod</span><span>SQLite(Drift)</span><span>ML Kit</span><span>AdMob</span><span>Play 결제</span></div>
+          </div>
+          <div class="phones">
+            <img src="assets/shots/homerecord-space.webp" alt="집기록 공간별 촬영 항목 화면" width="480" height="986" loading="lazy">
+            <img src="assets/shots/homerecord-home.webp" alt="집기록 홈 화면" width="480" height="986" loading="lazy">
+            <img src="assets/shots/homerecord-issue.webp" alt="집기록 사건 기록 화면" width="480" height="986" loading="lazy">
+          </div>
+        </article>
+
+        <div class="grid">
+          <article class="app">
+            <div class="app-top">
+              <img class="light" src="assets/apps/ildangtok.png" alt="" width="48" height="48">
+              <div><h3>일당톡</h3><span class="status ready">출시 준비 중</span></div>
+            </div>
+            <p class="one">말 한마디로 간병비·일당을 계산하고, 24시간·달력일·시급 기준 정산서까지 만들어 줍니다.</p>
+            <div class="tags"><span>React</span><span>TypeScript</span><span>Capacitor</span></div>
+          </article>
+
+          <article class="app">
+            <div class="app-top">
+              <img src="assets/apps/evidencenote.png" alt="" width="48" height="48">
+              <div><h3>증거노트</h3><span class="status dev">개발 중</span></div>
+            </div>
+            <p class="one">층간소음·택배 파손·누수 같은 생활 속 분쟁 기록을 사건별로 모아 타임라인과 PDF로 정리합니다.</p>
+            <div class="tags"><span>Flutter</span><span>한국어·영어</span><span>홈 위젯</span></div>
+          </article>
+
+          <article class="app">
+            <div class="app-top">
+              <img src="assets/apps/snapreminder.png" alt="" width="48" height="48">
+              <div><h3>찍어알림</h3><span class="status dev">개발 중</span></div>
+            </div>
+            <p class="one">스크린샷이나 사진 속 날짜·시간을 기기 안에서 읽어, 확인 한 번으로 알림을 만들어 줍니다.</p>
+            <div class="tags"><span>Flutter</span><span>ML Kit OCR</span><span>로컬 알림</span></div>
+          </article>
+
+          <article class="app">
+            <div class="app-top">
+              <img src="assets/apps/familydeadline.png" alt="" width="48" height="48">
+              <div><h3>우리집 알림장</h3><span class="status dev">개발 중</span></div>
+            </div>
+            <p class="one">자동차검사·여권·보험처럼 가족의 생활 기한을 '실제 기한'과 '준비 시작일'로 나눠 챙기고, 원하면 가족과 함께 맞춰 봅니다.</p>
+            <div class="tags"><span>Flutter</span><span>Firebase</span><span>로컬 알림</span></div>
+          </article>
+
+          <article class="app">
+            <div class="app-top">
+              <img src="assets/apps/travelmate.png" alt="" width="48" height="48">
+              <div><h3>TravelMate</h3><span class="status dev">개발 중</span></div>
+            </div>
+            <p class="one">일정·지도·환율·예산·준비물·예약 보관함을 한 앱에서. 해외여행 준비부터 여행 중까지 오프라인 우선으로 씁니다.</p>
+            <div class="tags"><span>Flutter</span><span>Google Maps</span><span>오프라인</span></div>
+          </article>
+
+          <article class="app">
+            <div class="app-top">
+              <span class="app-glyph" aria-hidden="true">
+                <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 21s-7-6.1-7-11.5A7 7 0 0 1 19 9.5C19 14.9 12 21 12 21z"/><circle cx="12" cy="9.5" r="2.5"/></svg>
+              </span>
+              <div><h3>우리동네 개발 알리미</h3><span class="status plan">설계·데이터 구축 중</span></div>
+            </div>
+            <p class="one">관심 지역 주변의 건축허가·정비사업·도시계획 변경을 모아, 새 소식과 진행 단계 변화를 알려주는 서비스입니다.</p>
+            <div class="tags"><span>Python</span><span>FastAPI</span><span>PostGIS</span></div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- 할 수 있는 일 -->
+    <section class="section alt" id="skills" aria-labelledby="skills-title">
+      <div class="wrap">
+        <p class="kicker">SKILLS</p>
+        <h2 id="skills-title">직접 해 본 일들</h2>
+        <p class="sub">위 앱들을 만들면서 실제로 구현하고 검증한 기능입니다.</p>
+        <div class="skills">
+          <div class="skill">
+            <div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="6" y="2" width="12" height="20" rx="3"/><path d="M11 18h2"/></svg></div>
+            <h3>Flutter 앱 개발</h3>
+            <p>Android 우선으로 만들고 iOS 빌드 설정까지 한 코드로 준비합니다. 작은 화면·큰 글씨에서도 깨지지 않는 화면을 만듭니다.</p>
+            <span class="where">집기록 · 증거노트 · 찍어알림 외</span>
+          </div>
+          <div class="skill">
+            <div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><ellipse cx="12" cy="5" rx="8" ry="3"/><path d="M4 5v6c0 1.7 3.6 3 8 3s8-1.3 8-3V5"/><path d="M4 11v6c0 1.7 3.6 3 8 3s8-1.3 8-3v-6"/></svg></div>
+            <h3>오프라인 · 기기 안 저장</h3>
+            <p>로그인·서버 없이 SQLite로 동작하고, ZIP 백업·복원과 데이터 이전까지 설계합니다. 개인정보 부담이 적은 구조입니다.</p>
+            <span class="where">집기록 · 증거노트 · TravelMate</span>
+          </div>
+          <div class="skill">
+            <div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 8V6a2 2 0 0 1 2-2h2M16 4h2a2 2 0 0 1 2 2v2M20 16v2a2 2 0 0 1-2 2h-2M8 20H6a2 2 0 0 1-2-2v-2"/><circle cx="12" cy="12" r="3.5"/></svg></div>
+            <h3>카메라 · 문자 인식</h3>
+            <p>같은 구도로 다시 찍는 촬영 화면, 사진 속 글자·숫자를 기기 안에서 읽는 OCR(ML Kit)을 다룹니다.</p>
+            <span class="where">집기록 · 찍어알림</span>
+          </div>
+          <div class="skill">
+            <div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14 3H7a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V8z"/><path d="M14 3v5h5M9 13h6M9 17h6"/></svg></div>
+            <h3>PDF · 보고서 생성</h3>
+            <p>한글 폰트가 들어간 PDF를 기기 안에서 만들고, 원본 사진과 기록을 한 파일로 정리해 공유합니다.</p>
+            <span class="where">집기록 · 증거노트</span>
+          </div>
+          <div class="skill">
+            <div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M15 9.5c-.5-1-1.6-1.5-3-1.5-1.7 0-3 .9-3 2.2 0 3 6 1.6 6 4.6 0 1.3-1.3 2.2-3 2.2-1.4 0-2.6-.6-3.1-1.6M12 6v2M12 16v2"/></svg></div>
+            <h3>광고 · 인앱 결제</h3>
+            <p>AdMob 배너·전면·보상형 광고를 사용 흐름을 해치지 않게 배치하고, Google Play 일회성 결제와 구매 복원을 붙입니다.</p>
+            <span class="where">집기록 · 일당톡</span>
+          </div>
+          <div class="skill">
+            <div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M8 9l-4 3 4 3M16 9l4 3-4 3M13.5 5l-3 14"/></svg></div>
+            <h3>웹 기술 앱 · 서버 연동</h3>
+            <p>React·TypeScript 화면을 Capacitor로 앱으로 만들고, Firebase 로그인·가족 동기화와 FastAPI·PostGIS 위치 기반 데이터 서버를 다룹니다.</p>
+            <span class="where">일당톡 · 우리집 알림장 · 우리동네 개발 알리미</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 협업 -->
+    <section class="section" id="work" aria-labelledby="work-title">
+      <div class="wrap">
+        <p class="kicker">COLLABORATION</p>
+        <h2 id="work-title">이런 협업을 함께할 수 있어요</h2>
+        <p class="sub">규모가 작아도 괜찮습니다. 필요한 만큼만, 끝까지 책임지고 만듭니다.</p>
+        <div class="offers">
+          <div class="offer">
+            <span class="num">01</span>
+            <h3>외주 앱 개발</h3>
+            <p>기획이 정리된 앱을 Flutter로 만들어 스토어 출시 준비까지 마칩니다.</p>
+            <ul>
+              <li>화면 설계와 개발, 실기기 테스트</li>
+              <li>광고·인앱 결제 연동</li>
+              <li>스토어 등록정보·데이터 보안·개인정보처리방침 준비</li>
+            </ul>
+          </div>
+          <div class="offer">
+            <span class="num">02</span>
+            <h3>MVP · 프로토타입</h3>
+            <p>아이디어가 통하는지 빠르게 확인할 수 있는 최소 기능 앱을 만듭니다.</p>
+            <ul>
+              <li>핵심 기능 한두 가지에 집중</li>
+              <li>휴대폰에 바로 설치해 보는 테스트 빌드</li>
+              <li>써 본 결과에 맞춘 다음 단계 제안</li>
+            </ul>
+          </div>
+          <div class="offer">
+            <span class="num">03</span>
+            <h3>기존 앱 개선 · 유지보수</h3>
+            <p>이미 있는 앱의 기능을 더하고, 화면을 새로 다듬고, 바뀐 정책에 맞춥니다.</p>
+            <ul>
+              <li>디자인 시안대로 UI 개편</li>
+              <li>새 Android 버전·스토어 정책 대응</li>
+              <li>버그 수정과 기능 추가</li>
+            </ul>
+          </div>
+        </div>
+
+        <ol class="steps" aria-label="진행 순서">
+          <li><strong>메일로 문의</strong><span>만들고 싶은 것을 한두 줄로 알려주세요.</span></li>
+          <li><strong>범위 · 일정 정리</strong><span>기능 목록과 일정, 비용을 함께 정합니다.</span></li>
+          <li><strong>개발 · 중간 공유</strong><span>단계마다 설치해 볼 수 있는 빌드를 공유합니다.</span></li>
+          <li><strong>출시 · 인수인계</strong><span>스토어 준비와 소스·문서를 전달합니다.</span></li>
+        </ol>
+      </div>
+    </section>
+
+    <!-- 문의 -->
+    <section class="section" id="contact" aria-labelledby="contact-title" style="padding-top:8px">
+      <div class="wrap">
+        <div class="contact">
+          <h2 id="contact-title">만들고 싶은 앱이 있나요?</h2>
+          <p>간단한 아이디어여도 괜찮아요. 메일로 보내주시면 확인하고 답장 드릴게요.</p>
+          <a class="btn btn-primary" href="mailto:yjstudio.apps@gmail.com?subject=%5BYJ%20Studio%5D%20%ED%98%91%EC%97%85%20%EB%AC%B8%EC%9D%98">협업 문의 메일 보내기</a>
+          <span class="mail">yjstudio.apps@gmail.com</span>
+          <div class="hint">
+            <strong>메일에 적어주시면 좋아요</strong>
+            <ul>
+              <li>만들고 싶은 앱 한두 줄 설명</li>
+              <li>원하는 일정과 예산 범위</li>
+              <li>참고하는 앱이나 화면 (있다면)</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
   </main>
+
+  <footer class="foot">
+    <div class="wrap">
+      <div>
+        <strong style="color:var(--ink)">YJ Studio</strong><br>
+        <a href="mailto:yjstudio.apps@gmail.com">yjstudio.apps@gmail.com</a><br>
+        © 2026 YJ Studio
+      </div>
+      <div>
+        <a href="privacy/">개인정보처리방침</a>
+        <ul>
+          <li><a href="privacy/homerecord/">집기록</a></li>
+          <li><a href="privacy/evidencenote/">증거노트</a></li>
+          <li><a href="privacy/woorijip/">우리집 알림장</a></li>
+          <li><a href="privacy/travelmate/">TravelMate</a></li>
+        </ul>
+      </div>
+    </div>
+  </footer>
 </body>
 </html>
