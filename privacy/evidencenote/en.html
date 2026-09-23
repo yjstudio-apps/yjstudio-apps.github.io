@@ -30,13 +30,38 @@
     </section>
 
     <section>
-      <h2>2. Information that leaves your device</h2>
+      <h2>2. Information that leaves your device (collected by third parties)</h2>
+      <p>Your records never leave your device. However, the advertising service included in the app automatically collects the information below.</p>
+      <div class="table-wrap">
+        <table>
+          <thead>
+            <tr><th>Service (provider)</th><th>Data collected</th><th>Purpose</th><th>Retention</th></tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Google AdMob ads<br>(Google LLC)</td>
+              <td>Device identifiers such as advertising ID and app set ID, IP address (approximate location), ad views, clicks and other usage, device and app information</td>
+              <td>Serving ads, measuring ad performance, preventing fraud</td>
+              <td>Per Google's Privacy Policy</td>
+            </tr>
+            <tr>
+              <td>Google Play billing<br>(Google LLC)</td>
+              <td>Payment information (handled by Google)</td>
+              <td>Processing the Remove ads in-app purchase</td>
+              <td>Per Google's policies</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
       <ul>
-        <li><strong>The app never sends anything off your device on its own.</strong> It contains no advertising, analytics, or crash-reporting services, and it does not use the internet permission at all.</li>
+        <li>Only non-personalized ads are requested. In regions that require consent, such as the EU, ads are requested only after the consent form, and you can change your consent in Settings → Ad privacy settings.</li>
+        <li><strong>Your records — case details, photos, recordings, contacts — are never used for ads or sent to ad companies.</strong> The app contains no analytics or crash-reporting tools.</li>
+        <li>If you buy Remove ads, no ads are shown.</li>
+        <li>More about how Google handles data: <a href="https://policies.google.com/privacy">https://policies.google.com/privacy</a></li>
         <li>When you create a PDF report, a ZIP with original files, or a backup file and share or save it, the file goes only to the app or location you choose. From there, that service's policy applies.</li>
         <li>When creating a report, you can turn off "Show personal details" to leave out the other party's name and contact details, the case location, and similar items. Text in notes and details inside photos are not hidden automatically, so please review the content before sharing.</li>
       </ul>
-      <p style="margin-top:10px">The developer does not provide your information to third parties and does not outsource the processing of personal information.</p>
+      <p style="margin-top:10px">Apart from the services above, the developer does not provide your information to third parties and does not outsource the processing of personal information.</p>
     </section>
 
     <section>
@@ -50,6 +75,7 @@
             <tr><td>Microphone</td><td>Recordings you start yourself (the app's record button, or Record on the home screen widget, app shortcut, or Quick Settings tile). There is no automatic call recording or scheduled recording.</td><td>Optional (only recording is unavailable if denied)</td></tr>
             <tr><td>Foreground service (microphone)</td><td>Keeps a recording going when the screen turns off or you use another app. A notification is always shown while recording.</td><td>Used only while recording</td></tr>
             <tr><td>Notifications</td><td>Shows the notification that a recording is in progress</td><td>Optional</td></tr>
+            <tr><td>Internet, advertising ID</td><td>Showing ads and checking a Remove ads purchase. Recording features work without internet.</td><td>Required (for ads)</td></tr>
             <tr><td>Biometrics</td><td>Verifies it's you with a fingerprint, face, or your screen lock when app lock is on. Biometric data is handled by Android and is never visible to the app.</td><td>Optional</td></tr>
           </tbody>
         </table>
@@ -86,6 +112,7 @@
       <h2>7. Security measures</h2>
       <ul>
         <li>Records are kept in the app's private storage, which other apps cannot read.</li>
+        <li>Information sent to the advertising service is encrypted in transit (TLS).</li>
         <li>You can turn on app lock (fingerprint, face, or screen lock) and hide the app in recent apps. App lock stops others from opening the app; the stored files themselves are protected by your device's built-in encryption.</li>
         <li>Backup files and ZIP files with originals are not encrypted, so take care when sharing or storing them.</li>
       </ul>
