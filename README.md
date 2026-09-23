@@ -7,5 +7,6 @@ YJ Studio 앱 안내와 개인정보처리방침 페이지 (GitHub Pages)
 - 우리집 알림장: https://yjstudio-apps.github.io/privacy/woorijip/
   - 계정 삭제: https://yjstudio-apps.github.io/privacy/woorijip/delete-account/
   - 가족 초대 링크(앱이 사용, 주소 바꾸지 말 것): https://yjstudio-apps.github.io/woorijip/invite/
+- TravelMate: https://yjstudio-apps.github.io/privacy/travelmate/
 
 문의: yjstudio.apps@gmail.com
