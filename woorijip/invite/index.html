@@ -1,0 +1,92 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex">
+<title>우리집 알림장 초대</title>
+<meta property="og:title" content="우리집 알림장 가족 초대">
+<meta property="og:description" content="가족이 우리집 알림장에 초대했어요. 눌러서 참여해 보세요.">
+<style>
+  :root { --bg:#F5F9F7; --card:#FFFFFF; --text:#18232B; --muted:#52606D; --primary:#237F70; --on-primary:#FFFFFF; --mint:#E6F3EF; --border:#E4ECE8; }
+  @media (prefers-color-scheme: dark) {
+    :root:not([data-theme="light"]) { --bg:#0F1614; --card:#17211E; --text:#E6EEEB; --muted:#A5B3AE; --primary:#5CC2AE; --on-primary:#0F1614; --mint:#1C2D28; --border:#26332F; }
+  }
+  * { box-sizing: border-box; }
+  body { margin:0; background:var(--bg); color:var(--text); font-family: -apple-system, "Apple SD Gothic Neo", "Noto Sans KR", "Malgun Gothic", sans-serif; line-height:1.6; }
+  main { max-width: 480px; margin: 0 auto; padding: 40px 16px 64px; }
+  .card { background: var(--mint); border-radius: 24px; padding: 28px 20px; text-align: center; }
+  .icon { font-size: 44px; line-height: 1; }
+  h1 { font-size: 1.45rem; margin: 14px 0 6px; }
+  .muted { color: var(--muted); font-size: .95rem; margin: 0; }
+  .btn { display: block; width: 100%; border: 0; border-radius: 16px; padding: 16px; font-size: 1.05rem; font-weight: 700; text-align: center; text-decoration: none; cursor: pointer; margin-top: 14px; font-family: inherit; }
+  .primary { background: var(--primary); color: var(--on-primary); }
+  .outline { background: var(--card); color: var(--primary); border: 1px solid var(--border); }
+  .code-box { background: var(--card); border: 1px solid var(--border); border-radius: 20px; padding: 18px 20px; margin-top: 20px; }
+  .code { font-size: 1.8rem; font-weight: 800; letter-spacing: .2em; color: var(--primary); margin: 4px 0; word-break: break-all; }
+  ol { margin: 8px 0 0; padding-left: 20px; text-align: left; }
+  li { margin: 4px 0; }
+  .hidden { display: none; }
+</style>
+</head>
+<body>
+<main>
+  <div class="card">
+    <div class="icon" aria-hidden="true">🏠</div>
+    <h1>우리집 알림장에 초대받았어요</h1>
+    <p class="muted">가족과 같은 일정·기한을 함께 보고 챙겨요.</p>
+    <a id="open" class="btn primary" href="#">앱에서 열고 참여하기</a>
+    <a id="store" class="btn outline" href="#">앱 설치하기 (Google Play)</a>
+  </div>
+
+  <div id="code-box" class="code-box">
+    <p class="muted">초대 코드 (48시간 동안 쓸 수 있어요)</p>
+    <p id="code" class="code">-</p>
+    <button id="copy" class="btn outline" type="button">코드 복사</button>
+    <ol class="muted">
+      <li>위 버튼으로 앱을 열면 바로 참여 화면이 나와요.</li>
+      <li>앱이 열리지 않으면 앱을 설치한 뒤 이 링크를 다시 눌러 주세요.</li>
+      <li>그래도 안 되면 앱의 설정 → 가족과 함께 쓰기 → 초대받았어요에 코드를 입력해 주세요.</li>
+    </ol>
+  </div>
+  <p id="bad" class="muted hidden" style="margin-top:20px;text-align:center">초대 링크가 올바르지 않아요. 가족에게 링크를 다시 받아 주세요.</p>
+  <p class="muted" style="margin-top:24px;text-align:center"><a href="../../privacy/woorijip/" style="color:var(--primary)">개인정보처리방침</a> · YJ Studio</p>
+</main>
+<script>
+  (function () {
+    var params = new URLSearchParams(location.search);
+    var code = (params.get('c') || '').toUpperCase().replace(/[^A-Z0-9]/g, '');
+    var allowed = ['com.familydeadline.family_deadline', 'com.familydeadline.family_deadline.dev'];
+    var pkg = allowed.indexOf(params.get('p')) >= 0 ? params.get('p') : allowed[0];
+    var store = 'https://play.google.com/store/apps/details?id=' + allowed[0];
+    var valid = /^[A-HJKMNP-Z2-9]{8}$/.test(code);
+
+    document.getElementById('store').href = store;
+    if (!valid) {
+      document.getElementById('open').classList.add('hidden');
+      document.getElementById('code-box').classList.add('hidden');
+      document.getElementById('bad').classList.remove('hidden');
+      return;
+    }
+    document.getElementById('code').textContent = code;
+
+    var isAndroid = /Android/i.test(navigator.userAgent);
+    var appLink = 'woorijip://join?c=' + code;
+    // Android: 앱이 있으면 열고, 없으면 Play 스토어로.
+    var intentLink = 'intent://join?c=' + code + '#Intent;scheme=woorijip;package=' + pkg +
+      ';S.browser_fallback_url=' + encodeURIComponent(store) + ';end';
+    document.getElementById('open').href = isAndroid ? intentLink : appLink;
+
+    document.getElementById('copy').addEventListener('click', function () {
+      var button = this;
+      var done = function () { button.textContent = '복사했어요'; };
+      if (navigator.clipboard && navigator.clipboard.writeText) {
+        navigator.clipboard.writeText(code).then(done, function () { prompt('코드를 복사해 주세요', code); });
+      } else {
+        prompt('코드를 복사해 주세요', code);
+      }
+    });
+  })();
+</script>
+</body>
+</html>
