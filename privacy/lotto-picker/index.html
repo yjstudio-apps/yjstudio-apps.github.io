@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>개인정보처리방침 — 꿈꾸는 로또 추첨기</title>
+<style>
+  :root { color-scheme: light dark; }
+  body {
+    margin: 0 auto; padding: 32px 20px 80px; max-width: 760px;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Malgun Gothic",
+      "Apple SD Gothic Neo", sans-serif;
+    line-height: 1.7; color: #1c1b1f; background: #fff;
+    word-break: keep-all;
+  }
+  h1 { font-size: 26px; letter-spacing: -0.5px; margin-bottom: 4px; }
+  h2 { font-size: 18px; margin-top: 36px; letter-spacing: -0.3px; }
+  .updated { color: #6b6b70; font-size: 13px; margin: 0 0 28px; }
+  table { border-collapse: collapse; width: 100%; margin: 12px 0; font-size: 14px; }
+  th, td { border: 1px solid #e0e0e5; padding: 9px 11px; text-align: left; vertical-align: top; }
+  th { background: #f5f4f8; font-weight: 700; }
+  code { background: #f2f1f6; padding: 2px 6px; border-radius: 5px; font-size: 13px; }
+  .note {
+    margin-top: 40px; padding: 16px 18px; border-radius: 12px;
+    background: #f5f4f8; font-size: 14px; color: #46464b;
+  }
+  a { color: #4c5bd4; }
+  @media (prefers-color-scheme: dark) {
+    body { color: #e5e2e9; background: #131316; }
+    th { background: #1e1d22; }
+    th, td { border-color: #33323a; }
+    code, .note { background: #1e1d22; color: #c9c6ce; }
+    .updated { color: #96939c; }
+    a { color: #b3bcff; }
+  }
+</style>
+</head>
+<body>
+
+<h1>개인정보처리방침 — 꿈꾸는 로또 추첨기</h1>
+<p class="updated">최종 수정일: 2026년 9월 25일</p>
+
+<p>「꿈꾸는 로또 추첨기」(이하 "앱")는 이용자의 개인정보를 소중히 다룹니다. 이 방침은 앱이
+어떤 정보를 다루고, 어떤 외부 서비스와 통신하는지를 설명합니다.</p>
+
+<h2>1. 앱이 수집하는 정보</h2>
+<p><strong>앱 개발자는 이용자의 개인정보를 수집하거나 서버로 전송하지 않습니다.</strong>
+앱에는 회원가입도, 로그인도, 자체 서버도 없습니다.</p>
+<p>이용자가 앱에서 만든 아래 데이터는 <strong>모두 기기 안에만 저장</strong>됩니다.</p>
+<ul>
+  <li>저장한 로또 번호와 당첨 대조 결과</li>
+  <li>꿈 일기와 그로부터 만든 번호</li>
+  <li>즐겨찾는 복권 판매점</li>
+  <li>알림 설정 등 앱 설정값</li>
+  <li>회차별 당첨번호 캐시</li>
+</ul>
+<p>이 데이터는 개발자를 포함한 누구에게도 전송되지 않으며, <strong>앱을 삭제하면
+기기에서 함께 삭제</strong>됩니다.</p>
+
+<h2>2. 앱이 통신하는 외부 서비스</h2>
+<table>
+  <tr><th>서비스</th><th>목적</th><th>전달되는 정보</th></tr>
+  <tr>
+    <td>동행복권</td><td>회차별 당첨번호 조회</td>
+    <td>조회할 회차 번호. 통신 과정에서 이용자의 IP 주소가 해당 서버에 전달될 수 있습니다.</td>
+  </tr>
+  <tr>
+    <td>Google 뉴스 RSS</td><td>로또 관련 뉴스 제목·링크 표시</td>
+    <td>검색어(고정값). IP 주소가 전달될 수 있습니다.</td>
+  </tr>
+  <tr>
+    <td>Google AdMob</td><td>앱 내 배너 광고 게재</td>
+    <td>광고 식별자(AAID), 기기·앱 정보, 대략적인 위치 등을 Google이 수집할 수 있습니다.</td>
+  </tr>
+  <tr>
+    <td>네이버 지도 (NAVER Cloud Platform)</td><td>명당 지도 표시</td>
+    <td>지금 보고 있는 지도 영역의 좌표와 기기·앱 정보가 네이버에 전달됩니다.</td>
+  </tr>
+  <tr>
+    <td>외부 지도 앱 / 웹 지도</td><td>판매점 위치 보기</td>
+    <td>이용자가 선택한 판매점의 <strong>주소 문자열</strong>만 전달됩니다.</td>
+  </tr>
+</table>
+<p>Google이 광고 목적으로 데이터를 처리하는 방식은
+<a href="https://policies.google.com/technologies/partner-sites">여기</a>에서 확인할 수 있습니다.
+광고 식별자는 언제든 기기 설정에서 재설정하거나 맞춤 광고를 끌 수 있습니다.
+(Android 설정 → 개인정보 보호 → 광고)</p>
+
+<h2>3. 앱이 요구하는 권한</h2>
+<table>
+  <tr><th>권한</th><th>용도</th></tr>
+  <tr>
+    <td>카메라</td>
+    <td>로또 용지의 QR 코드를 읽어 번호를 자동 입력합니다.
+        <strong>촬영한 이미지는 저장하거나 전송하지 않습니다.</strong></td>
+  </tr>
+  <tr>
+    <td>위치(대략적)</td>
+    <td>"로또 명당 찾기" 지도를 내 주변으로 맞추는 데 씁니다. 좌표는 기기 안에서만
+        쓰이고 저장하거나 전송하지 않습니다. 다만 지도를 그리는 동안
+        <strong>보고 있는 영역</strong>은 네이버 지도 서버로 전달됩니다.</td>
+  </tr>
+  <tr>
+    <td>알림</td>
+    <td>추첨 결과 안내, 구매 리마인더, 당첨금 수령 기한 알림</td>
+  </tr>
+  <tr><td>인터넷</td><td>당첨번호·뉴스 조회, 광고</td></tr>
+</table>
+<p>권한은 모두 거부할 수 있으며, 거부해도 해당 기능만 동작하지 않을 뿐 앱의 나머지
+기능은 그대로 사용할 수 있습니다.</p>
+
+<h2>4. 만 14세 미만 아동</h2>
+<p>이 앱은 만 14세 미만 아동을 대상으로 하지 않으며, 아동의 개인정보를 고의로
+수집하지 않습니다.</p>
+
+<h2>5. 데이터 보관 및 삭제</h2>
+<p>앱이 만드는 모든 데이터는 기기 내부 저장소에만 있습니다. 앱을 삭제하면 전부
+사라지며, 개발자는 이를 복구할 수 없습니다.</p>
+
+<h2>6. 방침 변경</h2>
+<p>이 방침이 바뀌면 이 페이지의 내용과 최종 수정일을 갱신합니다.</p>
+
+<h2>7. 문의</h2>
+<p>개인정보 관련 문의: <code>ares1lee@naver.com</code></p>
+
+<p class="note">
+이 앱은 복권을 판매하거나 구매를 대행하지 않으며, 당첨을 보장하지 않습니다.
+번호 추천·통계·해몽 기능은 재미를 위한 것으로 당첨 확률에 어떤 영향도 주지 않습니다.
+</p>
+
+</body>
+</html>
