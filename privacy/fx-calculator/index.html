@@ -1,0 +1,129 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>환율계산기 개인정보처리방침 · Currency Calculator Privacy Policy</title>
+<meta name="description" content="환율계산기 · Currency Calculator 개인정보처리방침 — YJ Studio">
+<link rel="canonical" href="https://yjstudio-apps.github.io/privacy/fx-calculator/">
+<!-- Published source: yjstudio-apps/yjstudio-apps.github.io, privacy/fx-calculator/index.html -->
+<style>
+  :root { color-scheme: light dark; --ink:#173A33; --muted:#56766D; --bg:#F4F8F6; --card:#FFFFFF; --line:#D6E4DD; --accent:#0E6354; }
+  @media (prefers-color-scheme: dark) { :root { --ink:#E3F1EC; --muted:#A8C1B8; --bg:#0F1A17; --card:#16241F; --line:#27403A; --accent:#6FD6BA; } }
+  * { box-sizing: border-box; }
+  body { margin:0; background:var(--bg); color:var(--ink); font:16px/1.75 system-ui,-apple-system,"Malgun Gothic","Apple SD Gothic Neo",sans-serif; word-break:keep-all; }
+  main { max-width:760px; margin:0 auto; padding:40px 20px 64px; }
+  h1 { font-size:28px; line-height:1.35; margin:0 0 6px; letter-spacing:-.5px; }
+  h2 { font-size:19px; margin:34px 0 8px; color:var(--accent); }
+  p, li { color:var(--ink); }
+  .meta { color:var(--muted); font-size:14px; margin:0 0 22px; }
+  section.lang { background:var(--card); border:1px solid var(--line); border-radius:20px; padding:26px 24px; margin-top:22px; }
+  table { width:100%; border-collapse:collapse; font-size:15px; }
+  th, td { text-align:left; vertical-align:top; padding:9px 8px; border-bottom:1px solid var(--line); }
+  th { color:var(--muted); font-weight:600; white-space:nowrap; }
+  .table-wrap { overflow-x:auto; }
+  a { color:var(--accent); }
+  nav a { margin-right:14px; }
+</style>
+</head>
+<body>
+<main>
+  <h1>환율계산기 개인정보처리방침<br><span style="font-size:20px">Currency Calculator Privacy Policy</span></h1>
+  <div class="meta">시행일 Effective date: 2026-10-01 · <nav style="display:inline"><a href="#ko">한국어</a><a href="#en">English</a></nav></div>
+
+  <section class="lang" id="ko" lang="ko">
+    <p>「<b>환율계산기</b>」(이하 "앱")는 이용자의 개인정보를 소중히 다룹니다. 이 방침은 앱이 어떤 정보를 다루고, 어떤 외부 서비스와 통신하는지를 설명합니다.</p>
+
+    <h2>1. 개발자가 수집하는 개인정보</h2>
+    <p>앱에는 회원가입도, 로그인도, 자체 서버도 없습니다. 앱은 이름·연락처·카드번호 등 개인정보를 개발자에게 자동으로 수집·전송하지 않습니다. 이용자가 직접 보내는 문의 메일은 7항에 설명한 범위에서 회신을 위해 처리합니다.</p>
+
+    <h2>2. 기기에만 저장되는 정보</h2>
+    <p>다음 정보는 이용자의 기기 안에만 저장되며 개발자에게 전송되지 않습니다.</p>
+    <ul>
+      <li>입력한 금액, 계산기 기록(최근 200건), 환전 내역, 견적 비교 입력값</li>
+      <li>관심 통화, 목표 환율 알림 조건, 수수료·언어·테마 설정, 홈 화면 위젯 통화 선택</li>
+      <li>환율 캐시(재다운로드 가능한 공개 환율 데이터)</li>
+    </ul>
+    <p>Android의 백업 설정이 켜져 있으면 환율 캐시를 제외한 앱 데이터가 이용자의 Google 계정 백업에 포함될 수 있습니다. 앱을 삭제하거나 [설정 › 앱 › 환율계산기 › 저장공간 › 데이터 삭제]를 선택하면 기기의 데이터가 삭제됩니다.</p>
+    <p><b>사진에서 가격 읽기:</b> 사용자가 촬영하거나 직접 선택한 사진의 글자를 Google ML Kit의 기기 내 모델로 읽습니다. 사진과 인식된 글자는 개발자나 글자 인식 서버에 전송하지 않습니다. 앱의 임시 촬영 파일은 인식이 끝나거나 취소되면 삭제하며, 갤러리 원본은 변경하지 않습니다. 인식한 글자는 확인 화면을 위해 메모리에만 유지하고, 사용자가 적용한 금액·통화만 기존 환산 기능에 전달합니다. 전체 사진 보관함 접근이나 사진 위치 정보 권한을 요청하지 않습니다.</p>
+    <p>ML Kit SDK는 진단과 사용 분석을 위해 기기 제조사·모델·OS, 앱 패키지·버전, 설치별 식별자, 처리 시간·입출력 크기·오류 코드 등 기술 정보를 처리할 수 있습니다. 이 통신은 HTTPS로 암호화됩니다. <a href="https://developers.google.com/ml-kit/android-data-disclosure">Google ML Kit 데이터 공개 안내</a></p>
+
+    <h2>3. 외부 환율 서비스</h2>
+    <p>최신·과거 환율을 받기 위해 앱은 다음 공개 서비스에 접속합니다. 요청에는 통화 코드와 날짜만 포함되며 입력 금액이나 기록은 포함되지 않습니다. 통신 과정에서 각 서비스가 IP 주소 등 일반적인 접속 정보를 처리할 수 있습니다.</p>
+    <ul>
+      <li>Frankfurter (유럽중앙은행 기준 환율) — <a href="https://frankfurter.dev">frankfurter.dev</a></li>
+      <li>ExchangeRate-API — <a href="https://www.exchangerate-api.com">exchangerate-api.com</a></li>
+    </ul>
+
+    <h2>4. 광고 (Google AdMob)</h2>
+    <p>앱에는 Google AdMob 배너 광고와 계산기 이용 후 제한적으로 표시되는 전면 광고가 포함됩니다. AdMob은 광고 제공·측정·부정 방지를 위해 다음 정보를 처리할 수 있습니다.</p>
+    <div class="table-wrap"><table>
+      <tr><th>항목</th><td>광고 ID 등 기기 식별자, IP 주소(대략적인 위치), 기기·앱 정보, 광고와의 상호작용, 진단 정보</td></tr>
+      <tr><th>목적</th><td>광고 표시와 성과 측정, 부정 클릭 방지, 광고 개인화(동의한 경우)</td></tr>
+      <tr><th>제공</th><td>Google — <a href="https://policies.google.com/technologies/partner-sites">Google이 앱의 정보를 사용하는 방식</a>, <a href="https://policies.google.com/privacy">Google 개인정보처리방침</a></td></tr>
+    </table></div>
+    <p>필요한 지역에서는 앱이 광고 동의 화면을 표시하며, 앱 설정의 광고 개인정보 옵션에서 선택을 바꿀 수 있습니다. Android 설정 › 개인정보 보호 › 광고에서 광고 ID를 재설정하거나 삭제할 수 있습니다. 입력 금액과 환전 기록은 광고 요청에 포함되지 않습니다.</p>
+
+    <h2>5. 권한</h2>
+    <ul>
+      <li>인터넷·네트워크 상태: 환율 조회와 광고 표시</li>
+      <li>알림: 설정한 목표 환율 도달 알림 표시(거부해도 다른 기능은 사용 가능)</li>
+      <li>부팅 완료 수신: 기기 재시작 후 목표 환율 확인 일정 복원</li>
+    </ul>
+
+    <h2>6. 아동</h2>
+    <p>앱은 만 13세 미만 아동을 대상으로 하지 않습니다.</p>
+
+    <h2>7. 변경과 문의</h2>
+    <p>이 방침이 바뀌면 이 페이지에 게시하고 시행일을 갱신합니다. 개인정보 관련 문의: <a href="mailto:yjstudio.apps@gmail.com">yjstudio.apps@gmail.com</a>. 문의를 직접 보내면 회신을 위해 발신 이메일 주소와 사용자가 작성한 문의 내용을 처리합니다. 앱은 메일을 자동 발송하거나 사진·기록을 자동 첨부하지 않습니다.</p>
+  </section>
+
+  <section class="lang" id="en" lang="en">
+    <p><b>Currency Calculator</b> (the "App") respects your privacy. This policy explains what information the App handles and which outside services it contacts.</p>
+
+    <h2>1. Personal data we collect</h2>
+    <p>The App has no account, no sign-in and no server of its own. It does not automatically collect or send personal data such as names, contact details or card numbers to the developer. Emails you choose to send are processed to reply to your inquiry as described in section 7.</p>
+
+    <h2>2. Data stored only on your device</h2>
+    <p>The following stays on your device and is never sent to the developer:</p>
+    <ul>
+      <li>Amounts you enter, calculator history (latest 200 entries), exchange records, quote comparison inputs</li>
+      <li>Favorite currencies, target-rate alert conditions, fee/language/theme settings, home-screen widget currencies</li>
+      <li>A cache of public exchange rates that can be downloaded again</li>
+    </ul>
+    <p>If Android backup is enabled, app data other than the rate cache may be included in your Google account backup. Uninstalling the App, or Settings › Apps › Currency Calculator › Storage › Clear data, deletes it from the device.</p>
+    <p><b>Reading prices from photos:</b> Photos you capture or explicitly select are recognized by bundled Google ML Kit models on your device. Photos and recognized text are not sent to the developer or a text recognition server. Temporary camera files created by the App are deleted after recognition or cancellation; gallery originals are not changed. Recognized text stays in memory for the review screen. Only the amount and currency you apply are passed to the existing converter. The App does not request access to your entire photo library or photo-location permission.</p>
+    <p>For diagnostics and usage analytics, the ML Kit SDK may process technical data such as device manufacturer, model and OS, app package and version, per-installation identifiers, processing time, input/output sizes and error codes. This communication is encrypted using HTTPS. <a href="https://developers.google.com/ml-kit/android-data-disclosure">Google ML Kit data disclosure</a></p>
+
+    <h2>3. Exchange-rate services</h2>
+    <p>To load current and historical rates the App contacts these public services. Requests contain only currency codes and dates, never your amounts or records. Like any website, these services may process connection data such as your IP address.</p>
+    <ul>
+      <li>Frankfurter (European Central Bank reference rates) — <a href="https://frankfurter.dev">frankfurter.dev</a></li>
+      <li>ExchangeRate-API — <a href="https://www.exchangerate-api.com">exchangerate-api.com</a></li>
+    </ul>
+
+    <h2>4. Advertising (Google AdMob)</h2>
+    <p>The App includes Google AdMob banners and limited interstitial ads after calculator use. AdMob may process the following to serve and measure ads and prevent fraud:</p>
+    <div class="table-wrap"><table>
+      <tr><th>Data</th><td>Device identifiers such as the advertising ID, IP address (approximate location), device and app information, ad interactions, diagnostics</td></tr>
+      <tr><th>Purpose</th><td>Showing and measuring ads, fraud prevention, ad personalization where you consent</td></tr>
+      <tr><th>Provider</th><td>Google — <a href="https://policies.google.com/technologies/partner-sites">How Google uses information from apps</a>, <a href="https://policies.google.com/privacy">Google Privacy Policy</a></td></tr>
+    </table></div>
+    <p>Where required, the App asks for ad consent, and you can change it later from the ad privacy option in the App's settings. You can reset or delete your advertising ID in Android Settings › Privacy › Ads. Your amounts and exchange records are never included in ad requests.</p>
+
+    <h2>5. Permissions</h2>
+    <ul>
+      <li>Internet and network state: loading rates and ads</li>
+      <li>Notifications: alerts when a target rate is reached (the rest of the App works without it)</li>
+      <li>Boot completed: restoring the rate-check schedule after a restart</li>
+    </ul>
+
+    <h2>6. Children</h2>
+    <p>The App is not directed at children under 13.</p>
+
+    <h2>7. Changes and contact</h2>
+    <p>Any change will be posted on this page with an updated effective date. Privacy questions: <a href="mailto:yjstudio.apps@gmail.com">yjstudio.apps@gmail.com</a>. If you choose to email us, your sender address and the message you write are processed to reply to your inquiry. The App does not send emails or attach photos or records automatically.</p>
+  </section>
+</main>
+</body>
+</html>
