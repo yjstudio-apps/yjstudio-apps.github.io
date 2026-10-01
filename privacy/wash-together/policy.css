@@ -1,0 +1,31 @@
+:root { color-scheme: light dark; }
+* { box-sizing: border-box; }
+body {
+  margin: 0 auto; padding: 32px 20px 64px; max-width: 800px;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Malgun Gothic", "Apple SD Gothic Neo", sans-serif;
+  line-height: 1.75; color: #1c1b1f; background: #fff;
+  overflow-wrap: anywhere;
+}
+nav { display: flex; flex-wrap: wrap; gap: 16px; font-size: 14px; margin-bottom: 24px; }
+nav span { font-weight: 700; }
+h1 { font-size: clamp(22px, 5vw, 28px); letter-spacing: -0.5px; line-height: 1.4; margin: 0 0 8px; }
+h2 { font-size: 19px; margin-top: 36px; letter-spacing: -0.3px; }
+.updated { color: #6b6b70; font-size: 13px; margin: 0 0 28px; }
+.table-wrap { overflow-x: auto; margin: 12px 0; }
+table { border-collapse: collapse; width: 100%; font-size: 14px; }
+caption { text-align: left; font-weight: 700; margin-bottom: 8px; }
+th, td { border: 1px solid #e0e0e5; padding: 10px 12px; text-align: left; vertical-align: top; }
+thead th { background: #f5f4f8; }
+tbody th { width: 30%; }
+code { background: #f2f1f6; padding: 2px 6px; border-radius: 5px; font-size: 13px; }
+li { margin-bottom: 8px; }
+a { color: #4c5bd4; }
+a:focus-visible { outline: 3px solid #4c5bd4; outline-offset: 4px; }
+footer { margin-top: 40px; border-top: 1px solid #e0e0e5; padding-top: 18px; color: #6b6b70; font-size: 13px; }
+@media (prefers-color-scheme: dark) {
+  body { color: #e5e2e9; background: #131316; }
+  thead th, code { background: #1e1d22; }
+  th, td, footer { border-color: #33323a; }
+  .updated, footer { color: #aaa7b0; }
+  a { color: #b3bcff; }
+}
