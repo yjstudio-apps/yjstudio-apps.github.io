@@ -12,10 +12,11 @@
     <header class="page">
       <span class="eyebrow">찍어알림</span>
       <h1>개인정보처리방침</h1>
-      <p class="meta">시행일: 2026년 9월 23일 · YJ Studio</p>
+      <p class="meta">시행일: 2026년 10월 13일 · YJ Studio</p>
+      <p><a href="#english">English privacy policy</a> · <a href="#korean">한국어</a></p>
     </header>
 
-    <section>
+    <section id="korean">
       <p>YJ Studio(이하 '개발자')는 「개인정보 보호법」 등 관련 법령을 지키며, 찍어알림 앱(이하 '앱') 이용자의 개인정보를 다음과 같이 처리합니다. 앱은 이용자가 공유·선택하거나 직접 찍은 사진에서 날짜·시간을 찾아 기기 알림으로 만들어 줍니다.</p>
     </section>
 
@@ -69,6 +70,7 @@
       </div>
       <p>이 정보는 앱이 아니라 광고 SDK 가 직접 처리하며, Google 의 <a href="https://policies.google.com/technologies/partner-sites">파트너 사이트 및 앱에서 데이터를 사용하는 방식</a>과 <a href="https://policies.google.com/privacy">개인정보처리방침</a>이 적용됩니다. <strong>사진과 인식된 텍스트는 광고 SDK 에 전달되지 않습니다.</strong></p>
       <p>맞춤 광고가 싫다면 휴대폰 <strong>설정 &gt; 개인정보 보호 &gt; 광고</strong> 에서 '광고 ID 삭제' 또는 '맞춤 광고 선택 해제'를 선택할 수 있습니다. 광고는 계속 표시되지만 이용자의 관심사와 무관하게 표시됩니다.</p>
+      <p>1.1.0부터 Google의 동의 관리 도구(UMP)가 해당 지역에 필요한 광고 개인정보 안내와 선택 화면을 제공합니다. 광고 요청 가능 여부를 확인한 뒤 광고를 요청하며, 선택을 다시 변경해야 하는 경우 앱 설정에 <strong>광고 개인정보 선택</strong> 항목이 표시됩니다. 언어 설정을 바꿔도 지역별 동의 절차를 생략하지 않습니다.</p>
     </section>
 
     <section>
@@ -151,6 +153,36 @@
       <h2 lang="en">Summary (English)</h2>
       <p>The developer does not collect or store the user's photos or recognized text. There is no account and no developer server. Text recognition (OCR) and date parsing run entirely on the user's device; photos and results are never uploaded. The app requests neither full gallery access nor the camera permission — it receives a single image that the user shares, picks in the system photo picker, or takes with the device's own camera app. Saved reminders, notes and optionally kept images stay in the app's private storage and are deleted when the app is uninstalled. The app shows Google AdMob ads, and Google may collect an advertising ID and device information to serve them (see section 3); photos and recognized text are never passed to the ad SDK. Google ML Kit may send device and app diagnostics, but not photos or recognized text (see section 4). Contact: <a href="mailto:yjstudio.apps@gmail.com">yjstudio.apps@gmail.com</a></p>
     </section>
+
+    <article id="english" lang="en">
+      <h1>SnapReminder Privacy Policy</h1>
+      <p class="meta">Updated October 13, 2026 · YJ Studio</p>
+      <p>SnapReminder finds dates and times in one image you share, select or take, and lets you confirm them before creating a reminder. YJ Studio does not operate an account system or a server that receives your photos, recognized text or reminders.</p>
+      <h2>1. Information on your device</h2>
+      <p>Text recognition and date parsing run on your device. Temporary copies of selected images stay in the app cache and are cleaned up when you reopen the app after they are more than a day old. Saved reminder titles, dates, notes and text stay in the app database. Keeping an original image is optional and off by default. If enabled, the image stays in the app's private storage. Language, reading script, notification and appearance preferences also stay on your device.</p>
+      <p>The developer cannot access this information. Android may include app data in a backup to your own Google account if you enable system backups; the developer cannot access that backup.</p>
+      <h2>2. Advertising and privacy choices</h2>
+      <p>The app displays Google AdMob ads on the home and reminder detail screens, occasional interstitial ads after saving reminders, and app-open ads on eligible foreground returns. Ads do not appear while you review an image, recognize text or edit a reminder. Google and its partners may process advertising identifiers, IP-based approximate location, device and app information, ad interactions and diagnostics to provide, measure and protect advertising. Photos, recognized text and reminder content are never passed to the advertising SDK.</p>
+      <p>Starting with version 1.1.0, Google's User Messaging Platform checks whether advertising requests are allowed and presents privacy messages or choices where required. When the SDK requires an entry point to change choices, <strong>Ad privacy choices</strong> appears in app settings. Changing the app language does not bypass these regional checks. You can also manage or delete the advertising ID in your device's privacy settings. See <a href="https://policies.google.com/privacy">Google's Privacy Policy</a> and <a href="https://policies.google.com/technologies/partner-sites">how Google uses information from partner apps</a>.</p>
+      <h2>3. Google ML Kit</h2>
+      <p>Google ML Kit recognizes text on the device; it does not upload the image or recognition result. Its components may send device and app information, an installation identifier, performance metrics and error codes to Google for diagnostics and usage statistics. See <a href="https://developers.google.com/ml-kit/android-data-disclosure">ML Kit's data disclosure</a>. The release app contains no separate developer analytics or crash-reporting service.</p>
+      <h2>4. Permissions</h2>
+      <ul>
+        <li>Notifications: to deliver reminders you save.</li>
+        <li>Exact alarms: optional, for timely notifications. Without permission, Android may delay delivery.</li>
+        <li>Boot completed: to restore scheduled notifications after restarting the device.</li>
+        <li>Internet and network status: for advertising, consent messages and SDK communication.</li>
+        <li>Vibration: to alert you when a notification arrives.</li>
+      </ul>
+      <p>The app does not request full gallery access or camera permission. It receives one image from the system photo picker, a share action or your device's camera app. Google's advertising SDK adds advertising ID and AdServices permissions; these do not grant access to your photos or recognized text.</p>
+      <h2>5. Deletion and retention</h2>
+      <p>Deleting a reminder cancels its scheduled notifications and lets you choose whether to delete a kept image. <strong>Delete all data</strong> in settings removes reminders, schedules, kept images and preferences. Uninstalling the app removes its private local storage. Your device or Google account backup controls apply separately to system backups.</p>
+      <h2>6. Children, protection and sharing</h2>
+      <p>The app is not directed at children. The developer does not knowingly collect children's personal information. Photos, recognized text and reminder content are not shared with third parties. Local records and kept images use the app's private storage, and image or recognized-text content is not written to logs. Advertising and ML Kit data practices are described above.</p>
+      <h2>7. Contact and changes</h2>
+      <p>For privacy questions, contact YJ Studio at <a href="mailto:yjstudio.apps@gmail.com">yjstudio.apps@gmail.com</a>. Changes to this policy are announced on this page or the app's store listing, with an updated date.</p>
+      <p><a href="#korean">한국어 개인정보처리방침</a></p>
+    </article>
 
     <footer><a href="../../">YJ Studio</a> · © 2026</footer>
   </main>
