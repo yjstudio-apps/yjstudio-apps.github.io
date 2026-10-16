@@ -1,0 +1,64 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Snap Cover — Privacy Policy / 개인정보처리방침</title>
+  <meta name="description" content="Snap Cover privacy policy: offline screenshot redaction, on-device recognition, temporary editing copies and optional encrypted personal info.">
+  <link rel="canonical" href="https://yjstudio-apps.github.io/privacy/snap-cover/">
+  <link rel="stylesheet" href="../../assets/style.css">
+</head>
+<body><main>
+<header class="page">
+  <span class="eyebrow">YJ Studio (YJ Lab) · com.yjlab.snapcover</span>
+  <h1>Snap Cover · 스냅 커버<br>Privacy Policy / 개인정보처리방침</h1>
+  <p class="meta">Effective date / 시행일: 2026-10-16 · Android 0.1.0</p>
+  <nav aria-label="Language"><a href="#en">English</a> · <a href="#ko">한국어</a></nav>
+</header>
+<section id="en" lang="en" aria-label="English privacy policy">
+<h2>1. App and operator</h2>
+<p>YJ Studio (YJ Lab) provides Snap Cover, an Android app for covering information in screenshots and photos before sharing. This policy applies to package <code>com.yjlab.snapcover</code>, including its closed test. Contact: <a href="mailto:yjstudio.apps@gmail.com">yjstudio.apps@gmail.com</a>.</p>
+<h2>2. On-device processing and data access</h2>
+<p>The app opens only images you choose with Android's photo/document picker or send to it through another app's share menu. It copies selected images into private local storage to support editing. Images may contain personal or sensitive information. The app processes image pixels, recognized text and its positions, possible information to cover, editing marks and temporary previews on your device. It does not change your original files.</p>
+<p>This version has no developer server, account system, advertising, in-app purchases, analytics SDK or remote crash reporting. It has no Android internet permission. We do not collect or receive your images, recognized text, registered personal information or app-usage data from the app.</p>
+<h2>3. Text and barcode recognition</h2>
+<p>Google ML Kit text-recognition and barcode models are bundled in the app and run on your device without a model download. Barcode recognition is used to locate possible areas to cover; barcode contents are not saved. ML Kit libraries may attempt to send diagnostic and usage statistics, but the app's internet permission is removed, preventing network transmission from this app. Android and Google Play services may provide the system photo picker under their own policies.</p>
+<p>Automatic recognition provides suggestions and can miss information. This version reads Latin letters, digits and Korean, and some number formats are specific to Korea. Review the entire saved result yourself before sharing. Covering with solid boxes does not remove information elsewhere in an image.</p>
+<h2>4. Optional “My info” and settings</h2>
+<p>If you enable “My info,” you may register names, addresses, account numbers or other text to find in selected images. Up to 30 values are stored locally using AES-256-GCM encryption and a non-exportable Android Keystore key. These values are excluded from settings exports, Android backup and device transfer. They are not deliberately added to exported images, logs or shared files. Registered text already visible in an image remains visible unless you cover it. Remove individual entries or clear the list in Settings → My info. Turning detection off leaves the saved list on the device until you delete it.</p>
+<p>Preferences such as theme, output format, recognition options and phone-number region are stored locally. Android's configured backup/device-transfer service may back up these preferences only. You can also export and import a settings-only JSON file through a document provider you choose. A cloud provider may upload that file under its own policy. Editing images, recognized text and “My info” values are excluded from these backups.</p>
+<h2>5. Saving, sharing and permissions</h2>
+<p>On Android 8–9, storage permission is requested only when needed to save a result to the gallery. The app does not request broad photo-library access, camera, microphone, contacts or location permissions. A library may declare network-state access; this does not grant internet transmission.</p>
+<p>Finished images are rendered into new files, with solid covers applied, and checked again for covered pixels and metadata. Source EXIF, GPS, thumbnail and text metadata are not intentionally copied into the rendered output. Visible content you leave uncovered remains in the result. Gallery saving writes to Pictures/SnapCover. Sharing grants the receiving app temporary read access to selected result files through Android's share sheet; working copies of originals are not shared. The app or service you choose may transmit and store the result under its own policy.</p>
+<h2>6. Retention and deletion</h2>
+<p>Working copies and saved edit-session documents are excluded from Android backup and device transfer. Finishing or cancelling an edit removes its session and temporary exports. Interrupted edits older than six hours, and temporary exports older than 24 hours, are cleaned up when the app next performs its cleanup routine; these are not background deletion deadlines. Android can also remove cached exports earlier.</p>
+<p>“My info” entries and preferences remain until you delete them, clear app storage or uninstall the app, subject to Android behavior. A Keystore reset can make saved “My info” unreadable; the app offers deletion rather than recovering the values. Gallery images, shared copies and settings files outside private app storage remain until you delete them separately in the gallery, receiving app or file provider. There is no online Snap Cover account to delete, and we cannot access or delete your local data remotely.</p>
+<h2>7. Children, support and this website</h2>
+<p>Snap Cover is a general image-editing utility and is not directed to children under 13. If you email support, your sender address and message are used to respond and retained only as needed for that purpose or applicable legal obligations. Please do not send private screenshots, personal-information lists or settings backups unless necessary for support.</p>
+<p>This policy is hosted on GitHub Pages; website access is subject to the <a href="https://docs.github.com/en/site-policy/privacy-policies/github-general-privacy-statement">GitHub Privacy Statement</a>. If data handling changes, we update this policy and its effective date and provide additional notice where required.</p>
+</section>
+<section id="ko" lang="ko" aria-label="한국어 개인정보처리방침">
+<h2>1. 앱과 운영자</h2>
+<p>YJ Studio(YJ Lab)의 Snap Cover(스냅 커버)는 스크린샷과 사진에서 필요한 정보를 가린 뒤 공유하는 Android 앱입니다. 이 방침은 비공개 테스트를 포함한 패키지 <code>com.yjlab.snapcover</code>에 적용됩니다. 문의: <a href="mailto:yjstudio.apps@gmail.com">yjstudio.apps@gmail.com</a>.</p>
+<h2>2. 기기 내 처리와 정보 접근</h2>
+<p>Android 사진·문서 선택기에서 직접 고르거나 다른 앱의 공유 메뉴로 보낸 이미지만 엽니다. 편집을 위해 선택한 이미지를 앱 전용 로컬 공간에 복사합니다. 이미지에는 개인정보나 민감한 정보가 포함될 수 있습니다. 이미지 픽셀, 인식된 글자와 위치, 가릴 후보, 편집 표시와 임시 미리보기는 기기 안에서 처리합니다. 원본 파일은 수정하지 않습니다.</p>
+<p>이 버전에는 개발자 서버, 회원 계정, 광고, 인앱 결제, 분석 SDK, 원격 오류 수집 도구가 없습니다. Android 인터넷 권한도 없습니다. 앱에서 사용자의 이미지·인식 글자·등록한 개인정보·앱 사용 정보를 개발자가 수집하거나 전달받지 않습니다.</p>
+<h2>3. 글자·바코드 인식</h2>
+<p>Google ML Kit 글자·바코드 인식 모델이 앱에 포함되어 있어 모델 다운로드 없이 기기 안에서 실행됩니다. 바코드는 가릴 위치를 찾는 데 사용하며 내용은 저장하지 않습니다. ML Kit 라이브러리가 진단·사용 통계 전송을 시도할 수 있지만 앱의 인터넷 권한을 제거하여 이 앱에서 네트워크로 전송할 수 없습니다. Android와 Google Play 서비스가 제공하는 시스템 사진 선택기에는 각 제공자의 방침이 적용될 수 있습니다.</p>
+<p>자동 인식은 후보를 제안하며 정보를 놓칠 수 있습니다. 이 버전은 라틴 문자·숫자·한국어를 읽고 일부 번호는 한국 형식만 찾습니다. 공유 전에 저장된 결과 전체를 직접 확인해야 합니다. 단색 상자로 가려도 이미지의 다른 곳에 있는 정보까지 없어지는 것은 아닙니다.</p>
+<h2>4. 선택형 ‘내 정보’와 설정</h2>
+<p>‘내 정보’를 켜면 이름·주소·계좌번호 등 선택한 이미지에서 찾을 글자를 최대 30개 등록할 수 있습니다. 이 값은 기기 밖으로 내보낼 수 없는 Android Keystore 키와 AES-256-GCM으로 암호화하여 로컬에 저장합니다. 설정 내보내기, Android 백업과 기기 간 전송에서 제외하며, 결과 이미지·로그·공유 파일에 별도로 추가하지 않습니다. 이미지에 원래 보이던 글자는 가리지 않으면 결과에도 남습니다. 설정 → 내 정보에서 개별 항목이나 전체 목록을 삭제할 수 있습니다. 자동 찾기를 끄더라도 목록은 직접 지울 때까지 기기에 보관됩니다.</p>
+<p>테마·결과 형식·인식 옵션·전화번호 기준 국가 등은 로컬 설정으로 저장합니다. Android의 설정된 백업·기기 이전 서비스는 이 설정만 백업할 수 있습니다. 사용자가 선택한 문서 제공자를 통해 설정만 담긴 JSON 파일을 직접 내보내거나 가져올 수도 있습니다. 클라우드 제공자를 고르면 해당 제공자의 방침에 따라 파일이 업로드될 수 있습니다. 편집 이미지·인식 글자·‘내 정보’ 값은 이 백업에 포함되지 않습니다.</p>
+<h2>5. 저장·공유·권한</h2>
+<p>Android 8–9에서는 결과를 갤러리에 저장할 때 필요한 저장소 권한을 요청합니다. 전체 사진 라이브러리·카메라·마이크·연락처·위치 권한은 요청하지 않습니다. 라이브러리가 네트워크 상태 권한을 선언할 수 있으나 인터넷 전송 권한은 아닙니다.</p>
+<p>결과는 단색 가리기를 적용한 새 파일로 만들고, 가린 픽셀과 메타데이터를 다시 점검합니다. 원본의 EXIF·GPS·썸네일·텍스트 메타데이터를 렌더링한 결과에 의도적으로 복사하지 않습니다. 사용자가 가리지 않은 내용은 결과에도 보입니다. 갤러리 저장 위치는 Pictures/SnapCover입니다. 공유할 때는 Android 공유 시트에서 선택한 수신 앱에 결과 파일의 임시 읽기 권한을 부여하며 원본 작업 사본을 공유하지 않습니다. 사용자가 고른 앱이나 서비스는 자체 방침에 따라 결과를 전송·보관할 수 있습니다.</p>
+<h2>6. 보관과 삭제</h2>
+<p>작업 사본과 편집 세션 문서는 Android 백업과 기기 이전에서 제외합니다. 편집을 완료하거나 취소하면 해당 세션과 임시 결과를 삭제합니다. 중단된 편집 중 6시간이 지난 자료와 24시간이 지난 임시 결과는 앱이 다음 정리 작업을 수행할 때 삭제합니다. 백그라운드에서 해당 시각에 즉시 삭제한다는 뜻은 아닙니다. Android가 캐시 결과를 더 일찍 지울 수도 있습니다.</p>
+<p>‘내 정보’와 설정은 직접 삭제하거나 앱 데이터를 지우거나 앱을 제거할 때까지 Android 동작에 따라 기기에 남습니다. Keystore 키가 초기화되면 ‘내 정보’를 읽지 못할 수 있으며, 앱은 값을 복구하는 대신 삭제 기능을 제공합니다. 갤러리에 저장한 이미지·공유 사본·앱 전용 공간 밖의 설정 파일은 별도로 갤러리·수신 앱·파일 제공자에서 지워야 합니다. 온라인 Snap Cover 계정은 없으며 개발자가 로컬 자료에 원격 접근하거나 삭제할 수 없습니다.</p>
+<h2>7. 아동·문의·웹사이트</h2>
+<p>Snap Cover는 일반 이미지 편집 도구로 만 13세 미만 아동을 대상으로 하지 않습니다. 이메일로 문의하면 발신 주소와 메시지를 답변에 사용하고, 해당 목적이나 법적 의무에 필요한 기간만 보관합니다. 지원에 필요한 경우 외에는 사적인 스크린샷·개인정보 목록·설정 백업을 보내지 마세요.</p>
+<p>이 방침은 GitHub Pages에 게시되며 웹사이트 접속에는 <a href="https://docs.github.com/en/site-policy/privacy-policies/github-general-privacy-statement">GitHub 개인정보처리방침</a>이 적용됩니다. 처리 방식이 달라지면 방침과 시행일을 갱신하고 필요한 추가 안내를 제공합니다.</p>
+</section>
+<footer>YJ Studio (YJ Lab) · <a href="mailto:yjstudio.apps@gmail.com">yjstudio.apps@gmail.com</a> · <a href="../">Privacy policies / 앱별 개인정보처리방침</a></footer>
+</main></body>
+</html>
