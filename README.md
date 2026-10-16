@@ -10,3 +10,5 @@ YJ Studio 앱 안내와 개인정보처리방침 페이지 (GitHub Pages)
 - TravelMate: https://yjstudio-apps.github.io/privacy/travelmate/
 
 문의: yjstudio.apps@gmail.com
+
+- Slide Studio: https://yjstudio-apps.github.io/privacy/slide-studio/ (한국어 / English)
