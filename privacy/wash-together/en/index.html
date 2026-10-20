@@ -14,7 +14,7 @@
 <main>
 <nav aria-label="Language selection"><a href="../../">App list</a><a href="../" lang="ko">한국어</a><span aria-current="page">English</span><a href="../ja/" lang="ja">日本語</a><a href="../zh/" lang="zh-Hans">简体中文</a></nav>
 <h1>Privacy Policy — Wash Together?</h1>
-<p class="updated">Effective and last updated: October 1, 2026</p>
+<p class="updated">Effective and last updated: October 20, 2026 (draft for the label-photo update)</p>
 
 <p>This policy explains how Wash Together?, a laundry compatibility and sorting helper provided by YJ Studio (Korean name: 같이 빨아도 돼?; Android package: <code>com.washtools.washtogether</code>; “the app”), handles information. The app has no account registration, login, payment or record synchronization through a developer-operated server.</p>
 
@@ -24,6 +24,8 @@
 <p>If you copy result text or share a summary image, the selected content is passed to the clipboard or the app you choose. Subsequent storage and use are governed by that app or service's policies.</p>
 
 <h2>2. Google AdMob advertising and external services</h2>
+<p>Label photos are processed on-device using Google ML Kit text recognition and local symbol shape matching. Photos, recognized text and recognition outputs are not sent to developer servers, advertising SDKs or Google servers. Only reviewed garment attributes are saved in history; photos and original text are not stored in records. The app attempts to delete temporary copies after processing or when the review screen closes. Following interruption, app-owned temporary files older than 24 hours are cleaned up on the next launch. Original gallery photos are not deleted. ML Kit may send performance and usage metrics to Google and contact Google for fixes, models or compatibility information.</p>
+<p><a href="https://developers.google.com/ml-kit/terms">Google ML Kit: Terms &amp; Privacy</a></p>
 <p>The app uses Google AdMob for banner and interstitial ads. The advertising SDK may collect or share the information below for advertising, measurement, diagnostics and fraud prevention. Processing may vary by device, region, consent status and Google's policies.</p>
 <div class="table-wrap"><table>
 <caption>Information the advertising service may process</caption>
@@ -47,7 +49,7 @@
 <p>Ads are requested only when the SDK permits them under the consent status. Core features remain available if ads are restricted or unavailable. You can reset or delete your advertising ID in Android settings; controls vary by device and operating-system version. Deleting the advertising ID does not stop all advertising-related processing, such as IP-address or diagnostic processing.</p>
 
 <h2>4. Permissions and data protection</h2>
-<p>The app and advertising SDK use network access and advertising-identifier permissions for ads and consent processing. The app does not request permissions for the camera, reading photos or the gallery, precise location, contacts, text messages or call history. The advertising service may infer approximate location from an IP address even without location permission.</p>
+<p>The app and advertising SDK use network access and advertising-identifier permissions for ads and consent processing. Label photos are read only when you take or select one. Android uses the system camera and photo picker without requesting broad gallery access. iOS includes camera and photo purpose descriptions. Precise location, contacts, text messages and call history permissions are not requested. Advertising services may infer approximate location from an IP address.</p>
 <p>Laundry records are stored in the app's private on-device storage and are not separately encrypted by the app. Use device locking and operating-system security features to protect them. The app offers no developer-server backup or manual backup-file feature, and is configured to exclude its data from Android automatic backups and device-to-device app-data transfers.</p>
 
 <h2>5. Retention and deletion</h2>
