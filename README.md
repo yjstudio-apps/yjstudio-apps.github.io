@@ -11,6 +11,9 @@ YJ Studio 앱 안내와 개인정보처리방침 페이지 (GitHub Pages)
 
 문의: yjstudio.apps@gmail.com
 
+- 봉인의 원정대: https://yjstudio-apps.github.io/privacy/seal-expedition/ (한국어 / English)
+  - 계정·데이터 삭제 요청: https://yjstudio-apps.github.io/privacy/seal-expedition/delete-account/
+
 - 블록 서바이버: 오버로드: https://yjstudio-apps.github.io/privacy/block-survivor/ (한국어 / English)
   - 온라인 기록·게스트 계정 삭제 요청: https://yjstudio-apps.github.io/privacy/block-survivor/delete-data/
 
