@@ -11,6 +11,8 @@ YJ Studio 앱 안내와 개인정보처리방침 페이지 (GitHub Pages)
 
 문의: yjstudio.apps@gmail.com
 
+- ROAD TO LEGEND - 축구 커리어: https://yjstudio-apps.github.io/privacy/road-to-legend/ (한국어 / English · 무료 비공개 테스트)
+
 - 봉인의 원정대: https://yjstudio-apps.github.io/privacy/seal-expedition/ (한국어 / English)
   - 계정·데이터 삭제 요청: https://yjstudio-apps.github.io/privacy/seal-expedition/delete-account/
 
