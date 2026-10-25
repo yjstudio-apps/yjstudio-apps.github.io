@@ -22,3 +22,5 @@ YJ Studio 앱 안내와 개인정보처리방침 페이지 (GitHub Pages)
   - 온라인 기록·게스트 계정 삭제 요청: https://yjstudio-apps.github.io/privacy/block-survivor/delete-data/
 
 - Slide Studio: https://yjstudio-apps.github.io/privacy/slide-studio/ (한국어 / English)
+
+- 태엽 용병단 · Clockwork Mercenaries: https://yjstudio-apps.github.io/privacy/clockwork-mercenaries/ (한국어 / English · 비공개 테스트)
